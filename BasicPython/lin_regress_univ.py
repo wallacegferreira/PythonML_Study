@@ -44,7 +44,7 @@ r_sq = model.score(x, y)
 print('Coefficient of determination - R^2:', r_sq)
 
 print('Intercept - b0:', model.intercept_) # coefficient b0
-print('Slope - b1:', model.coef_) # coefficiet b1
+print('Slope - b1:', model.coef_) # coefficient b1
 
 #
 # Step 5: Predict response
@@ -85,8 +85,8 @@ plt.show()
 fig2, ax2 = plt.subplots()
 ax2.plot(y, y_pred, linewidth=0, marker='s', label = "Predicted")
 ax2.plot(y, y, label=' Exact, y_pred = y')
-ax2.set_xlabel('Real Data, y')
-ax2.set_ylabel('Predicted Data, y_pred')
+ax2.set_xlabel('Actual Response, y')
+ax2.set_ylabel('Predicted Response, y_pred')
 ax2.legend(facecolor='white')
 plt.show()
 
